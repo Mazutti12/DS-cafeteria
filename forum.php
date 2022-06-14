@@ -28,10 +28,10 @@ require_once('class.php');
           </svg>
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
-          <li><a href="index.php" class="nav-link px-2 text-secunday ">Início</a></li>
+          <li><a href="index.php" class="nav-link px-2 text-white ">Início</a></li>
           <li><a href="cardapio.php" class="nav-link px-2 text-white ">Cardápio</a></li>
           <li><a href="about.php" class="nav-link px-2 text-white ">About</a></li>
-          <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
+          <li><a href="forum.php" class="nav-link px-2 text-principal ">Fórum</a></li>
         </ul>
         <div class="text-end">
             <a href="login.php" type="button" class="btn btn-outline-light me-2">Login</a>
@@ -46,6 +46,7 @@ require_once('class.php');
     </div>
   </header>
 
+  <div class="fixed-bottom">
     <footer class="p-3 bg-dark text-white size-footer">
         <div class="icone-footer">
             <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -65,7 +66,7 @@ require_once('class.php');
             </a>
         </div>
     </footer>
-
+    </div>
 </body>
 
 </html>

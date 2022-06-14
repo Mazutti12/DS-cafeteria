@@ -19,10 +19,9 @@ require_once('class.php');
 
 <body>
 
-    <!--- Cabeçalho -->
 
     <!--- Cabeçalho -->
-  <header class="p-3 bg-dark text-white sticky">
+    <header class="p-3 bg-dark text-white sticky tamanho">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
         <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ">
@@ -31,8 +30,8 @@ require_once('class.php');
           </svg>
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
-          <li><a href="index.php" class="nav-link px-2 text-secunday ">Início</a></li>
-          <li><a href="cardapio.php" class="nav-link px-2 text-white ">Cardápio</a></li>
+          <li><a href="index.php" class="nav-link px-2 text-white ">Início</a></li>
+          <li><a href="cardapio.php" class="nav-link px-2 text-principal ">Cardápio</a></li>
           <li><a href="about.php" class="nav-link px-2 text-white ">About</a></li>
           <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
         </ul>
@@ -48,28 +47,28 @@ require_once('class.php');
       </div>
     </div>
   </header>
-
     <!--- Produtos Bebidas --->
-
+    <div class="container">
     <div class="div-center">
 
         <h2 class="h2-homepage">Bebidas</h2>
         <!--- Café Preto --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/cafe-preto.jpg" class="card-img-top cardapio-image" alt="Café Preto">
+            <img src="style/img/cafe-preto.jpg" class="card-img-top cardapio-image" alt="cafe preto">
             <div class="card-body">
                 <h5 class="card-title">Café Preto</h5>
-                <p class="card-text"> Café a base de coca<br> R$ 3,30</p>
-                <input type="text" name="nome" value="Café Preto" hidden>
-                <input type="number" step="0.01" name="preco" value="3.30" hidden>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <input type="text" name="nome" value="capuccino" hidden>
+                <input type="number" step="0.01" name="preco" value="4.30" hidden>
                 <button class="btn button-favorite">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
-
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
+
         <!--- Capuccino --->
         <div class="card card-cardapio-image" style="width: 18rem;">
             <img src="style/img/capuccino.jpg" class="card-img-top cardapio-image" alt="Capuccino">
@@ -83,6 +82,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Café Expresso --->
@@ -96,6 +96,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Café com leite --->
@@ -109,6 +110,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Café Gelado --->
@@ -122,6 +124,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Chá --->
@@ -135,6 +138,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
     </div>
@@ -155,6 +159,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Coxinha --->
@@ -168,6 +173,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Pão de Queijo --->
@@ -181,6 +187,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Panqueca --->
@@ -194,6 +201,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Pastel de Forno --->
@@ -207,6 +215,7 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
         <!--- Torta de Limão --->
@@ -220,94 +229,13 @@ require_once('class.php');
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg>
                 </button>
+                <button class="btn btn-primary margin-btn">Adicionar ao carrinho</button>
             </div>
         </div>
     </div>
 
 
-    <!------- Inserir dados na tabela ----->
-    <div id="cadastro" name="cadastro">
-
-        <?php
-
-        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-        $pedidoAlteracao = null;
-        $msg = "";
-        //Caso tenha sido feito um POST da página
-        if ($_POST) {
-            //Verifica campos obrigatórios
-            if (!empty($_POST["nome"])) {
-                //Cria uma instância da classe Cliente
-                $pedido = new pedido();
-                // Passa dados do formulário para a classe
-                $pedido->setId($_POST["id"]);
-                $pedido->setNome($_POST["nome"]);
-                $pedido->setpreco($_POST["preco"]);
-
-                //Se não existir id, então é para inserir cliente
-                if (empty($_POST["id"])) {
-                    //Chama o método para inserir um cliente no banco
-                    $msg = $pedido->salvar();
-                } else {
-                    //Senão, devemos atualizar um cliente existente
-                    $msg = $pedido->atualizar();
-                }
-            } else {
-                $msg =  "<div class='aviso'>Por favor, verifique os campos obrigatórios</div>";
-            }
-        } elseif ($_GET) { // Caso os dados sejam enviados via GET
-            //Se operação = excluir
-            if ($_GET["op"] == "exc") {
-                //Cria uma instância da classe Cliente
-                $pedido = new pedido();
-                // Passa dados do formulário para a classe
-                $pedido->setId($_GET["id"]);
-                //Chama o método para excluir um cliente no banco
-                $msg = $pedido->excluir();
-            } elseif ($_GET["op"] == "alt") {
-                //Se operação = alterar 
-
-                //Cria uma instância da classe Cliente
-                $pedido = new pedido();
-                // Passa dados do formulário para a classe
-                $pedido->setId($_GET["id"]);
-
-                //crio um array 
-                $pedidosAlteracao = array();
-                //Chamo a função para pesquisa específica pelo ID
-                $pedidosAlteracao = $pedido->listar($msg);
-
-                if (is_array($pedidosAlteracao)) {
-                    $pedidoAlteracao = $pedidosAlteracao[0]; //Pega o primeiro cliente do array 
-                    // O $clienteAlteracao será utilizado no formulário para preencher os dados do cliente 
-                    // que foram pesquisados no banco de dados
-                }
-            }
-        }
-
-        //Imprime as mensagens
-        if ($msg !== "") {
-            echo "<div id='msg' name='msg' >" . $msg . "</div>";
-            $msg = "";
-        }
-        ?>
-
-        <form name="formulario" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
-            <input type="hidden" name="id" id="id" value="<?= isset($pedidoAlteracao) ? $pedidoAlteracao->getId() : ""; ?>" />
-            <fieldset>
-                <div class="campo">
-                    <label for="nome">Nome do Pedido:</label><br>
-                    <input type="text" size="50" name="nome" id="nome" placeholder="Informe o nome" value="<?= isset($pedidoAlteracao) ? $pedidoAlteracao->getNome() : ""; ?>" />
-                </div>
-                <div class="campo">
-                    <label for="preco">Preço:</label><br>
-                    <input type="number" step="0.01" name="preco" id="preco" placeholder="Informe o preço" required value="<?= isset($pedidoAlteracao) ? $pedidoAlteracao->getpreco() : ""; ?>" />
-                </div>
-                <button class="botao" type="submit" name="cadastrar" id="cadastrar">Inserir/Atualizar</button>
-            </fieldset>
-        </form>
-    </div>
+   </div>
 
 
     <!--- Footer -->

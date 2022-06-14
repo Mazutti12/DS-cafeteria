@@ -262,7 +262,7 @@ input:focus {
     color:#fff;
     padding:6px 15px 20px 22px;
     border:0 none;
-    font-weight:bold;
+    font-weight:bold;""
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -271,3 +271,10 @@ input:focus {
     background:  #006400;
 }
 
+.margin-btn{
+    margin-left: 32px;
+}
+
+.text-principal{
+    color: #ffc101;
+}
