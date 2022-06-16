@@ -262,7 +262,7 @@ input:focus {
     color:#fff;
     padding:6px 15px 20px 22px;
     border:0 none;
-    font-weight:bold;""
+    font-weight:bold;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -277,4 +277,30 @@ input:focus {
 
 .text-principal{
     color: #ffc101;
+}
+
+.login-container{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.distancia{
+    margin-top: 20px;
+}
+.margin-lado{
+    margin-left: 430px;
+}
+.conteiner-forum{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+.textarea-class{
+    border: 1px solid ;
+    width: 100%;
 }

@@ -1,8 +1,8 @@
 <?php
 
-require_once('jquery/index.php');
-require_once('connection.php');
-require_once('class.php');
+require_once('../jquery/index.php');
+require_once('../connection.php');
+require_once('../class.php');
        
 ?>
 <!DOCTYPE html>
@@ -12,6 +12,7 @@ require_once('class.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/stylecss.css">
     <title>Document</title>
 </head>
 
@@ -29,15 +30,14 @@ require_once('class.php');
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
           <li><a href="index.php" class="nav-link px-2 text-white ">Início</a></li>
+          <li><a href="index.php#about_session" class="nav-link px-2 text-white ">About</a></li>
           <li><a href="cardapio.php" class="nav-link px-2 text-white ">Cardápio</a></li>
-          <li><a href="about.php" class="nav-link px-2 text-principal ">About</a></li>
-          <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
+          <li><a href="forum.php" class="nav-link px-2 text-principal ">Fórum</a></li>
         </ul>
         <div class="text-end">
-            <a href="login.php" type="button" class="btn btn-outline-light me-2">Login</a>
-            <a href="register.php" type="button" class="btn btn-warning">Sign-up</a>
-            <a href="meus-pedidos.php">
-            <svg hidden xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+        <a href="../index.php" type="button" class="btn btn-outline-light me-2">LogOut</a>
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
             </svg>
           </a>
@@ -46,7 +46,70 @@ require_once('class.php');
     </div>
   </header>
 
-  <div class="fixed-bottom">
+  <!-- forum -->
+  <div class="conteiner-forum">
+  <div class="card mb-3" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div>
+        <textarea class="card-title textarea-class" placeholder="Título"></textarea>
+        </div>
+        <textarea class="card-text textarea-class" placeholder="Faça sua avaliação"></textarea>
+        <p class="card-text"><small class="text-muted">Não há alteração</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="card mb-3" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Última alteração há 3 mins</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Última alteração há 3 mins</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-4" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Última alteração há 3 mins</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+  <div class="aling-center">
     <footer class="p-3 bg-dark text-white size-footer">
         <div class="icone-footer">
             <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -66,7 +129,7 @@ require_once('class.php');
             </a>
         </div>
     </footer>
-</div>
+    </div>
 </body>
 
 </html>

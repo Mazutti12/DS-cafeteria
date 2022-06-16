@@ -1,8 +1,8 @@
 <?php
 
-require_once('jquery/index.php');
-require_once('connection.php');
-require_once('class.php');
+require_once('../jquery/index.php');
+require_once('../connection.php');
+require_once('../class.php');
 
 ?>
 
@@ -14,7 +14,9 @@ require_once('class.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/stylecss.css">
     <title>Cardápio</title>
+    
 </head>
 
 <body>
@@ -36,9 +38,8 @@ require_once('class.php');
           <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
         </ul>
         <div class="text-end">
-          <a href="login.php" type="button" class="btn btn-outline-light me-2">Login</a>
-          <a href="register.php" type="button" class="btn btn-warning">Sign-up</a>
-          <a hidden href="meus-pedidos.php">
+        <a href="../index.php" type="button" class="btn btn-outline-light me-2">LogOut</a>
+          <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
             </svg>
@@ -54,7 +55,7 @@ require_once('class.php');
         <h2 class="h2-homepage">Bebidas</h2>
         <!--- Café Preto --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/cafe-preto.jpg" class="card-img-top cardapio-image" alt="cafe preto">
+            <img src="../style/img/cafe-preto.jpg" class="card-img-top cardapio-image" alt="cafe preto">
             <div class="card-body">
                 <h5 class="card-title">Café Preto</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -71,7 +72,7 @@ require_once('class.php');
 
         <!--- Capuccino --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/capuccino.jpg" class="card-img-top cardapio-image" alt="Capuccino">
+            <img src="../style/img/capuccino.jpg" class="card-img-top cardapio-image" alt="Capuccino">
             <div class="card-body">
                 <h5 class="card-title">Capuccino</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -87,7 +88,7 @@ require_once('class.php');
         </div>
         <!--- Café Expresso --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/cafe-expresso.jpg" class="card-img-top cardapio-image" alt="Café Expresso">
+            <img src="../style/img/cafe-expresso.jpg" class="card-img-top cardapio-image" alt="Café Expresso">
             <div class="card-body">
                 <h5 class="card-title">Café Expresso</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -101,7 +102,7 @@ require_once('class.php');
         </div>
         <!--- Café com leite --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/cafe-com-leite.jpg" class="card-img-top cardapio-image" alt="Café com Leite">
+            <img src="../style/img/cafe-com-leite.jpg" class="card-img-top cardapio-image" alt="Café com Leite">
             <div class="card-body">
                 <h5 class="card-title">Café com Leite</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,7 +116,7 @@ require_once('class.php');
         </div>
         <!--- Café Gelado --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/cafe-gelado.jpeg" class="card-img-top cardapio-image" alt="Café Gelado">
+            <img src="../style/img/cafe-gelado.jpeg" class="card-img-top cardapio-image" alt="Café Gelado">
             <div class="card-body">
                 <h5 class="card-title">Café Gelado</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -129,7 +130,7 @@ require_once('class.php');
         </div>
         <!--- Chá --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/cha.jpg" class="card-img-top cardapio-image" alt="Chá">
+            <img src="../style/img/cha.jpg" class="card-img-top cardapio-image" alt="Chá">
             <div class="card-body">
                 <h5 class="card-title">Chá</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -150,7 +151,7 @@ require_once('class.php');
         <h2 class="h2-homepage">Lanches</h2>
         <!--- Café Preto --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/misto-quente.jpeg" class="card-img-top cardapio-image" alt="Misto Quente">
+            <img src="../style/img/misto-quente.jpeg" class="card-img-top cardapio-image" alt="Misto Quente">
             <div class="card-body">
                 <h5 class="card-title">Misto Quente</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -164,7 +165,7 @@ require_once('class.php');
         </div>
         <!--- Coxinha --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/coxinha.jpg" class="card-img-top cardapio-image" alt="Coxinha">
+            <img src="../style/img/coxinha.jpg" class="card-img-top cardapio-image" alt="Coxinha">
             <div class="card-body">
                 <h5 class="card-title">Coxinha</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -178,7 +179,7 @@ require_once('class.php');
         </div>
         <!--- Pão de Queijo --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/pao-de-queijo.jpg" class="card-img-top cardapio-image" alt="Pão de Queijo">
+            <img src="../style/img/pao-de-queijo.jpg" class="card-img-top cardapio-image" alt="Pão de Queijo">
             <div class="card-body">
                 <h5 class="card-title">Pão de Queijo</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -192,7 +193,7 @@ require_once('class.php');
         </div>
         <!--- Panqueca --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/panqueca-americana.jpg" class="card-img-top cardapio-image" alt="Panqueca">
+            <img src="../style/img/panqueca-americana.jpg" class="card-img-top cardapio-image" alt="Panqueca">
             <div class="card-body">
                 <h5 class="card-title">Panqueca</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -206,7 +207,7 @@ require_once('class.php');
         </div>
         <!--- Pastel de Forno --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/pastel-de-forno.jpg" class="card-img-top cardapio-image" alt="Pastel de Forno">
+            <img src="../style/img/pastel-de-forno.jpg" class="card-img-top cardapio-image" alt="Pastel de Forno">
             <div class="card-body">
                 <h5 class="card-title">Pastel de Forno</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -220,7 +221,7 @@ require_once('class.php');
         </div>
         <!--- Torta de Limão --->
         <div class="card card-cardapio-image" style="width: 18rem;">
-            <img src="style/img/torta-de-limao.jpg" class="card-img-top cardapio-image" alt="Torta de Limão">
+            <img src="../style/img/torta-de-limao.jpg" class="card-img-top cardapio-image" alt="Torta de Limão">
             <div class="card-body">
                 <h5 class="card-title">Torta de Limão</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

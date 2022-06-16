@@ -1,6 +1,6 @@
 <?php
 
-require_once('connection.php');
+require_once('../connection.php');
 
 
 ?>
@@ -12,6 +12,7 @@ require_once('connection.php');
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/stylecss.css">
   <title>Home Page</title>
 </head>
 
@@ -33,9 +34,8 @@ require_once('connection.php');
           <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
         </ul>
         <div class="text-end">
-          <a href="login.php" type="button" class="btn btn-outline-light me-2">Login</a>
-          <a href="register.php" type="button" class="btn btn-warning">Sign-up</a>
-          <a hidden href="meus-pedidos.php">
+          <a href="../index.php" type="button" class="btn btn-outline-light me-2">LogOut</a>
+          <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
             </svg>
@@ -54,13 +54,13 @@ require_once('connection.php');
     </div>
     <div class="carousel-inner size-image">
       <div class="carousel-item active">
-        <img src="style/img/caffee.jpg" class="d-block w-100 slide-image" alt="...">
+        <img src="../style/img/caffee.jpg" class="d-block w-100 slide-image" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="style/img/cafe2.jpg" class="d-block w-100 slide-image" alt="...">
+        <img src="../style/img/cafe2.jpg" class="d-block w-100 slide-image" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="style/img/cafe-esfira.jpg" class="d-block w-100 slide-image" alt="...">
+        <img src="../style/img/cafe-esfira.jpg" class="d-block w-100 slide-image" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,7 +75,7 @@ require_once('connection.php');
 
   <!--- Restante da página --->
   <div class="topicos-homepage">
-    <img src="style/img/tipos-de-cafe.jpg" alt="Xícara de café" class="col-6 image-homepage">
+    <img src="../style/img/tipos-de-cafe.jpg" alt="Xícara de café" class="col-6 image-homepage">
     <p class="col-6 text-homepage">The external scars tell only part of the story. I hear that Nancy is very pretty. She was disgusted he couldn’t tell the difference between lemonade and limeade. Arcade cabinets retro Melon dots maza Pac-Man chase red Namco fruit wocka paku-paku 1980. He had a hidden stash underneath the floorboards in the back room of the house.
       Don't put peanut butter on the dog's nose. The external scars tell only part of the story. She learned that water bottles are no longer just to hold liquid, but they're also status symbols. The old apple revels in its authority. I think I will buy the red car, or I will lease the blue one.</p>
   </div>
@@ -94,7 +94,7 @@ require_once('connection.php');
   </section>
   <div class="topicos-homepage topicos-homepageblock">
     <h2 class="h2-homepage">Como nos achar?</h2>
-    <img src="style/img/fachada-cafeteria.jpeg" alt="Fachada" class="image-homepage">
+    <img src="../style/img/fachada-cafeteria.jpeg" alt="Fachada" class="image-homepage">
     <p class="text-homepage p-margin">Patricia loves the sound of nails strongly pressed against the chalkboard. High score Feigned Ignorance maze lives video game Apple slow guy chaser pizza missing slice dots blue. Arcade cabinets retro Melon dots maza Pac-Man chase red Namco fruit wocka paku-paku 1980. Shadow dots strawberry Pac-Man Midway chaser Pinky kill screen.
 
       Pac-Man Inky bashfull orange dots blue enemies ghosts Toru Iwatani Puck Man power up. I hear that Nancy is very pretty. Shadow dots strawberry Pac-Man Midway chaser Pinky kill screen. Pac-Man Namco Toru Iwatani Pac-Man Fever maze dots.

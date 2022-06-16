@@ -28,9 +28,9 @@ require_once('class.php');
           </svg>
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
-          <li><a href="index.php" class="nav-link px-2 text-secunday ">Início</a></li>
+          <li><a href="index.php" class="nav-link px-2 text-white ">Início</a></li>
+          <li><a href="index.php#about_session" class="nav-link px-2 text-white ">About</a></li>
           <li><a href="cardapio.php" class="nav-link px-2 text-white ">Cardápio</a></li>
-          <li><a href="about.php" class="nav-link px-2 text-white ">About</a></li>
           <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
         </ul>
         <div class="text-end">
@@ -44,12 +44,12 @@ require_once('class.php');
     </div>
   </header>
 
-  div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Billing address</h4>
+  <div class="col-md-7 col-lg-8 login-container">
+        <h4 class="mb-3 text-white">Cadastre-se</h4>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">First name</label>
+              <label for="firstName" class="form-label text-white">Nome</label>
               <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid first name is required.
@@ -57,7 +57,7 @@ require_once('class.php');
             </div>
 
             <div class="col-sm-6">
-              <label for="lastName" class="form-label">Last name</label>
+              <label for="lastName" class="form-label text-white">Sobrenome</label>
               <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid last name is required.
@@ -65,9 +65,9 @@ require_once('class.php');
             </div>
 
             <div class="col-12">
-              <label for="username" class="form-label">Username</label>
+              <label for="username" class="form-label text-white">Usuário</label>
               <div class="input-group has-validation">
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <input type="text" class="form-control" id="username" placeholder="joao123" required>
               <div class="invalid-feedback">
                   Your username is required.
                 </div>
@@ -75,31 +75,47 @@ require_once('class.php');
             </div>
 
             <div class="col-12">
-              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <label for="email" class="form-label text-white">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="joao@exemplo.com">
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
             </div>
 
             <div class="col-12">
-              <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <label for="address" class="form-label text-white">Endereço</label>
+              <input type="text" class="form-control" id="address" placeholder="rua Julio de Castilhos-Centro, 95 " required>
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
             </div>
 
             <div class="col-12">
-              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              <label for="username" class="form-label text-white">Senha</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="password" placeholder="senha" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
             </div>
 
+            <div class="col-12">
+              <label for="username" class="form-label text-white">Confirmar Senha</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="conform-password" placeholder="senha" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+          
+
             <div class="col-md-5">
-              <label for="country" class="form-label">Country</label>
+              <label for="country" class="form-label text-white">País</label>
               <select class="form-select" id="country" required>
-                <option value="">Choose...</option>
-                <option>United States</option>
+                <option value="">Selecione</option>
+                <option>Brasil</option>
               </select>
               <div class="invalid-feedback">
                 Please select a valid country.
@@ -107,37 +123,36 @@ require_once('class.php');
             </div>
 
             <div class="col-md-4">
-              <label for="state" class="form-label">State</label>
+              <label for="state" class="form-label text-white">Estado</label>
               <select class="form-select" id="state" required>
-                <option value="">Choose...</option>
-                <option>California</option>
+                <option value="">Selecione</option>
+                <option>Rio Grande do Sul</option>
               </select>
               <div class="invalid-feedback">
                 Please provide a valid state.
               </div>
             </div>
 
-            <div class="col-md-3">
-              <label for="zip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
-                Zip code required.
-              </div>
-            </div>
+         
           </div>
 
           <hr class="my-4">
 
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+            <label class="form-check-label text-white" for="same-address">Concordo com os <a href="#">Termos de uso</a></label>
           </div>
 
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Save this information for next time</label>
+            <label class="form-check-label text-white" for="save-info">Quero receber email das promoçoes</label>
           </div>
-          <div class="fixed-bottom">
+          <div class="distancia">
+            <button class="btn btn-warning">Cadastre-se</button>
+            <a class="bnt margin-lado" href="register.php">Já tenho cadastro</a>
+          </div>
+        </div>
+          <div class="bottom">
     <footer class="p-3 bg-dark text-white size-footer ">
         <div class="icone-footer">
             <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -156,8 +171,8 @@ require_once('class.php');
                 </svg>
             </a>
         </div>
-    </footer>
-</div>
+      </footer>
+    </div>
 
 </body>
 

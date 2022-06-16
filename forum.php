@@ -29,8 +29,8 @@ require_once('class.php');
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
           <li><a href="index.php" class="nav-link px-2 text-white ">Início</a></li>
+          <li><a href="index.php#about_session" class="nav-link px-2 text-white ">About</a></li>
           <li><a href="cardapio.php" class="nav-link px-2 text-white ">Cardápio</a></li>
-          <li><a href="about.php" class="nav-link px-2 text-white ">About</a></li>
           <li><a href="forum.php" class="nav-link px-2 text-principal ">Fórum</a></li>
         </ul>
         <div class="text-end">
@@ -46,7 +46,52 @@ require_once('class.php');
     </div>
   </header>
 
-  <div class="fixed-bottom">
+  <div class="conteiner-forum">
+  <div class="card mb-3" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Última alteração há 3 mins</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Última alteração há 3 mins</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-4" style="max-width: 610px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="style/img/perfil.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Última alteração há 3 mins</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="bottom">
     <footer class="p-3 bg-dark text-white size-footer">
         <div class="icone-footer">
             <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
